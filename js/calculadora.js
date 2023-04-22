@@ -20,7 +20,11 @@ $(".numero").click(function() {
         break;
         case '=':
             arrNumeros.push($("#acum").val());
-            calcular();
+            if(arrNumeros.length == 2){
+                calcular();
+            } else {
+                alert("Favor ingresar número y operador matemático")
+            }
         break;
         default:
             $("#acum").val(valorCompleto + valor);
@@ -40,7 +44,7 @@ $("#btnBorrar").click(function() {
 function calcular() {
     let resultado = 0;
 
-    if(arrNumeros.length == 2){
+    
         switch (arrOp[0]) {
             case '+':
                 resultado = parseInt(arrNumeros[0]) + parseInt(arrNumeros[1]);
@@ -60,7 +64,7 @@ function calcular() {
                 resultado = parseInt(arrNumeros[0]) / parseInt(arrNumeros[1]);
             break;
         }
-    }
+    
 
     $("#resultado").html(
         arrNumeros[0] +" "+

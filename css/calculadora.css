@@ -8,3 +8,41 @@
 	margin-top: 5px;
 	margin-left: 2px;
 }
+
+/* Estilo para los botones */
+.btn-tamano {
+	width: 75px;
+	height: 75px;
+	font-size: 2em;
+	margin: 5px;
+  }
+
+/* Estilo para los botones de número */
+.numero {
+	background-color: #f0f0f0;
+	color: #333;
+  }
+
+  /* Estilo para la pantalla de la calculadora */
+#resultado {
+	font-size: 2em;
+	font-weight: bold;
+  }
+
+  /* Estilo para el botón de borrar */
+#btnBorrar {
+	background-color: #dc3545;
+	color: #fff;
+  }
+  
+  /* Estilo para el botón de igual */
+#btnIgual {
+	background-color: #007bff;
+	color: #fff;
+  }
+
+  /* Estilo para los botones en hover */
+.btn:hover {
+	background-color: #333;
+	color: #fff;
+  }
